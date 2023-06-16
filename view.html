@@ -1,0 +1,7 @@
+<!-- view.html -->
+
+{% for student in students %}
+  <p>{{ myapp_student.f_name }} {{ myapp_student.l_name }} - {{ myapp_student.email }}</p>
+{% empty %}
+  <p>No students found.</p>
+{% endfor %}

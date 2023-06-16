@@ -1,0 +1,10 @@
+<!-- add.html -->
+
+<form method="POST" action="{% url 'add_myapp_student' %}">
+    {% csrf_token %}
+    <input type="text" name="f_name" placeholder="First Name">
+    <input type="text" name="l_name" placeholder="Last Name">
+    <input type="email" name="email" placeholder="Email">
+    <button type="submit">Add Student</button>
+  </form>
+  
